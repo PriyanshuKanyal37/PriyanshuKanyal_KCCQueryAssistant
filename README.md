@@ -166,15 +166,6 @@ KCC_Query_Assistant/
 └── README.md
 ```
 
----
-
-## Demo Video
-
-You can watch a short walkthrough demo on Google Drive:
-
-[Demo Video](https://drive.google.com/your-demo-link-here)
-
----
 
 ## Author
 
