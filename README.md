@@ -49,8 +49,8 @@ Due to file size limitations on GitHub, some core assets are **not included dire
 **🔗 [Download Dataset from Google Drive](https://drive.google.com/file/d/1MtACzq796TaVxs0kCe1ydZFpmHUi6-Rf/view?usp=sharing)**
 
 Once downloaded, place the dataset in the following directory:
-data/
-└── kcc_data.csv
+├── data/
+│   └── kcc_data.csv
 
 
 ---
@@ -63,9 +63,11 @@ You do **not** need to generate embeddings locally — a precomputed version is 
 
 After downloading, place the files in the following directory structure:
 
-embeddings/
-├── faiss_index.index
-├── chunks.pkl
+├── embeddings/
+│   ├── faiss_index.index
+│   ├── chunks.pkl
+
+
 
 ---
 
