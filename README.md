@@ -17,6 +17,10 @@ Farmers in India often face challenges in getting real-time, region-specific agr
 
 This assistant is multilingual and lightweight, making it ideal for use in village-level computer centers, agricultural kiosks, and mobile devices.
 
+## DEMO
+
+![Demo](Demo.gif)
+
 
 ## How Does It Work?
 
