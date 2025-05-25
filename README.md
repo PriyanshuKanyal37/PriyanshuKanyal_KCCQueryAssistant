@@ -35,35 +35,50 @@ If nothing found:
 ```
 
 ---
-
 ## ⚠️ Note on Dataset & Embedding Files
 
-Due to file size limitations on GitHub, some core assets are **not included directly in this repository**:
+Due to file size limitations on GitHub, some core assets are **not included directly in this repository**.
 
-### 1 KCC Dataset:
--  The full CSV dataset (`kcc_raw.csv`) is approximately **800 MB** and with **1.4 Million Data** is hosted externally.
+---
 
-- **Download Raw Dataset**
-- 
-   You can download the raw KCC dataset from this Google Drive link:
-  
- **[Download Dataset from Google Drive](https://drive.google.com/file/d/1MtACzq796TaVxs0kCe1ydZFpmHUi6-Rf/view?usp=sharing)**
+### 📁 1. KCC Dataset
+
+- The full CSV dataset (`kcc_data.csv`) is approximately **800 MB** and contains **1.4 million entries**.
+- This dataset is hosted externally due to GitHub file size limits.
+
+**🔗 [Download Dataset from Google Drive](https://drive.google.com/file/d/1MtACzq796TaVxs0kCe1ydZFpmHUi6-Rf/view?usp=sharing)**
+
+Once downloaded, place the dataset in the following directory:
+data/
+└── kcc_data.csv
 
 
-### 2 Embeddings + FAISS Index:
-- The precomputed `chunks.pkl` and `faiss_index.index` files are **around 2.7 GB** and must be generated locally.
+---
 
-**Generate Embeddings Locally**
+### 📁 2. Embeddings + FAISS Index
 
-To generate embeddings and build the FAISS index on your own machine:
+You do **not** need to generate embeddings locally — a precomputed version is provided via Google Drive.
 
-1. **Preprocess the dataset**  
-   ```bash
-   python scripts/preprocess_data.py
+**🔗 [Download Embeddings & FAISS Index (2.7 GB)](https://drive.google.com/drive/folders/16qt8Wmo3Ih2GkboSj7M2sAqvN_lYvRmg?usp=sharing)**
 
-1. **Generate embeddings and index**
-   ```bash
-   python scripts/generate_embeddings.py
+After downloading, place the files in the following directory structure:
+
+embeddings/
+├── faiss_index.index
+├── chunks.pkl
+
+---
+
+### ⚙️ Optional: Generate Embeddings and Index Locally
+
+If you prefer to generate the embeddings and FAISS index yourself, you can use the following commands:
+
+```bash
+# 1. Preprocess the dataset
+python scripts/preprocess_data.py
+
+# 2. Generate embeddings and FAISS index
+python scripts/generate_embeddings.py
 
 
 ## Quick Start Instructions
