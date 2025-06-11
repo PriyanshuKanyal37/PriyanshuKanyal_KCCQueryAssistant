@@ -19,7 +19,7 @@ This assistant is multilingual and lightweight, making it ideal for use in villa
 
 ## DEMO
 
-![Demo](Demo.gif)
+![Demo](Demo-.gif)
 
 
 ## How Does It Work?
